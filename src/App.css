@@ -1,38 +1,210 @@
-.App {
+*{
+  justify-content: center;
+}
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+             background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+            padding: 50px;
+        }
+         .container {
+            text-align: center;
+            justify-content: center;
+            background-color:0px 0px 10px #efefef;
+            padding: 20px;
+            border-radius: 10px;
+             box-shadow: 0px 0px 10px #efefef;
+             position: relative;
+             width: 550px;
+             height: 100%;
+        }
+        .search {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+            border-radius: 2;
+               
+            
+        }
+        #search1{
+               border-radius: 10px;
+               width: 500px;
+               height: 40px;
+               padding: 10px;
+                  border: none;
+            outline: none;
+        
+       
+        }
+        
+        #card {
+            width: 500px;
+            padding: 10px;
+           box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        #task{
+             border: none;
+            outline: none;
+            padding: 2px;
+            border-radius: 10px;
+            padding-left: 2px;
+            width: 100%;
+            height: 37px;
+       
+        }
+        input {
+            border: none;
+            outline: none;
+            padding: 10px;
+            border-radius: 0px;
+            width:100%;
+            height: 100%;
+       
+        }
+        .text {
+            display: flex;
+            width: 500px;
+            height: 40px;
+        }
+        .time {
+            display: flex;
+            padding: 20px;
+            cursor: pointer;
+          
+           
+        }
+        img{
+            mix-blend-mode:multiply;
+        }
+      .calendar {
+      width: 300px;
+      margin: auto;
+      border: 1px solid #ccc;
+       padding: 10px;
+         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  font-weight: bold;
   text-align: center;
 }
+.day {
+  padding: 5px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+.day-cell {
+  padding: 5px;
+  text-align: center;
+  border:none;
+  background-color:rgba(255, 255, 255, 0.1);
+}
+.day-cell:hover{
+  border-radius:50em;
+  background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+cursor: pointer;
+}
+.close{
+    display:flex;
+    cursor: pointer;
+    font-size: 25px;
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.container1 {
+  width: 140px;
+  height: 90px;
+  text-align: center;
+  position: relative;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  }
+
+.another{
+  display: flex;
+  cursor: pointer;
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+#sec{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+#accordianbutton{
+width:880px;
+height: 30px;
+}
+#addTask{
+background-image: linear-gradient( 135deg, #5EFCE8 10%, #736EFE 100%);
+border-radius: 9px;
+border-style: none;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+}
+img{
+mix-blend-mode: multiply;
+/* mix-blend-mode:; */
+}
+.accordianbutton{
+width: 522px;
+text-align: center;
+justify-content: center;
+padding: 10px;
+background-color: white;
+border: none;
+/* right: -700px; */
+display: flex;
+border-radius: 3px;
+/* background-color: ; */
+background-image: linear-gradient(to right, #00b4db, #0083b0); 
+color: white;
+}
+
+
+.deleteBtn{
+background-color: red;
+border-style: none;
+padding: 3px;
+border-radius: 5px;
+width: 70px;
+height: 30px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+/* margin-left: 200px; */
+}
+.editBtn{
+background-color: lightgreen;
+border-style: none;
+padding: 3px;
+padding-bottom: 1px;
+border-radius: 5px;
+width: 45px;
+height: 30px;
+box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+/* margin-left: 200px; */
+}
+.taskvalue{
+width: 522px;
+height: 100%;
+background-color:rgba(255, 255, 255, 0.1);
+justify-content: center;
+text-align: center; 
+border-radius: 0px;
+}
+.edit-input{
+width: 500px;
+border-radius: none;
+
+}
+.checked {
+opacity: 0.5;
 }
